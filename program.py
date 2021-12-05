@@ -12,6 +12,7 @@ danny.name = 'blabla'
 print(danny.name)
 # print(danny.age) # private # Error
 # print(danny._Person__age) # you should not do that except on special
+danny.age = -1
 danny.set_age(-1)
 print(danny.get_age())
 danny.set_age(12)
