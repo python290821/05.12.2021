@@ -3,12 +3,13 @@ class Person:
     def __init__(self, id, name, age):
         self.id = id
         self.name = name # name must be at least 4 characters
+        print(self.name)
         self.__age = age # PRIVATE
         self.__temperature = 90
 
     @property
     def name(self):
-        return f'*{self.__name}*'
+        return f'* {self.__name.upper()} *'
 
     @name.setter
     def name(self, new_name):
@@ -16,6 +17,9 @@ class Person:
             print('too short! dahh')
             return
         self.__name = new_name
+
+    # danny.set_name('')
+    # danny.name = ''
 
     # def set_name(self, new_name):
     #     if len(new_name) < 4:
