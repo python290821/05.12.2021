@@ -15,8 +15,9 @@ class Circle:
         Circle.pie = new_pie
 
     @staticmethod
-    def printradiusWithStars(circle):
-        print(f'**** {circle.radius} ****')
+    def mergeCircles(circle1, circle2):
+        # self.radius
+        return Circle(circle1.radius * circle2.radius)
 
     @staticmethod
     def printPieWithStars():
